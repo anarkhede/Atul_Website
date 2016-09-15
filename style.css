@@ -1,1 +1,68 @@
+/* This style sheet applies style to the html page */
+
+*{
+    margin: 0;  /* 3) Remove margines for all sides in the page */
+}
+
+/* 6) By default the height=100% is
+100% of what it has, initially nothing.
+To show content parent-child relationship
+ is to be established, as done below.*/
+html, body {
+    height: 100%;
+}
+
+/* 4) Return margins to bottom of all 6 sections
+ and paragraph within the section
+ Nav + 5* sections and sub-sections (alternating)
+ (HOME, ABOUT, SERVICES, PRODUCTS, CONTACT) */
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 20%;
+}
+
+nav{
+    position: fixed;
+    /* 10) Fix nav bar stay with scrolling */
+    width: 100%;
+    height: 6%;
+    background-color: rgba(0,0,0,0.4);
+    /* rbg+alpha for opacity */
+    z-index: 99;
+    /* 11) Nav is always on the top. */
+}
+
+/* 5) Since all images are 100% tall and 100% wide
+hence one single class for all sections
+and one for patches or subsection */
+
+.sect {
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    background-size: cover;
+    /* 9) Fits images into screen size */
+    background-repeat: no-repeat;
+    /* Dont tile background pipcture */
+    background-attachment: fixed;
+    /* 12) Sub-sects go over sects */
+}
+
+.subsect {
+    height: 50%;
+    width: 100%;
+    background-color: rgba(255,228,196,1);
+}
+
+/* 8) Create class for plugging background images in sect */
+.sectOne {
+    background-image: url("../images/image1.jpg");
+}
+
+.sectTwo {
+    background-image: url("../images/image2.jpg");
+}
+
+.sectThree {
+    background-image: url("../images/image3.jpg");
+}
 
