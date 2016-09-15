@@ -29,7 +29,18 @@ nav{
     /* rbg+alpha for opacity */
     z-index: 99;
     /* 11) Nav is always on the top. */
+    text-align: center;
+    /* 15) Make nav content centered */
 }
+/* 14) Edit basic anchor style for nav bar */
+nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 50%;
+    margin-left: 2%; /* left spacing for each element in nav*/
+    line-height: 6%; /* same as nav height */
+}
+
 
 /* 5) Since all images are 100% tall and 100% wide
 hence one single class for all sections
@@ -65,4 +76,3 @@ and one for patches or subsection */
 .sectThree {
     background-image: url("../images/image3.jpg");
 }
-
