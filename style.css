@@ -45,7 +45,7 @@ nav a{
 /* 5) Since all images are 100% tall and 100% wide
 hence one single class for all sections
 and one for patches or subsection */
-
+/* . defines the class */
 .sect {
     height: 100%;
     width: 100%;
