@@ -12,23 +12,35 @@
 <!-- Populate the body with navigation bar + 5
 sections and subsections -->
 <nav>
-    <!-- 13) add anchors, edit basic anchors
-     in style.css -->
-    <a href="#">HOME</a>
-    <a href="#">ABOUT</a>
-    <a href="#">SERVICES</a>
-    <a href="#">PRODUCTS</a>
-    <a href="#">CONTACT</a>
+    <!-- 13) add anchors 'a',
+    edit basic anchors in style.css
+    # is for linking nav and div id's-->
+    <!-- 17) Add id after # to following -->
+    <a id="Home" href="#HomeSect">HOME</a>
+    <a id="About" href="#AboutSect">ABOUT</a>
+    <a id="Services" href="#ServicesSect">SERVICES</a>
+    <a id="Contact" href="#ContactSect">CONTACT</a>
+    <a id="Portfolio" href="#PortfolioSect">PORTFOLIO</a>
 </nav>
 <!-- 7) Add images to sections.
 No images for subsections, only color
 You can add 25 classes to the class variable,
  seperated by spaces.-->
-<div class="sect sectOne"></div>
-<div class="subsect"></div>
-<div class="sect sectTwo"></div>
-<div class="subsect"></div>
-<div class="sect sectThree"></div>
+<!-- 16) Add id tag to the following -->
+<div id="HomeSect" class="sect sectOne"></div>
+<div id="AboutSect" class="subsect"></div>
+<div id="ServicesSect" class="sect sectTwo"></div>
+<div id="ContactSect" class="subsect"></div>
+<div id="PortfolioSect" class="sect sectThree"></div>
+
+<!-- 18) Add Java Scrip to animate navigation
+across sections, bring it in here -->
+<!-- Make sure that jquery file is
+above js script file-->
+<script src="js/jquery-3.1.0.min.js"></script>
+<!-- 19) Create js script -->
+<script src="js/app.js"></script>
+
 
 </body>
 </html>
