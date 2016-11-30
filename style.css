@@ -75,11 +75,14 @@ and one for patches or subsection */
 
 .sectThree {
     background-image: url("../images/image3.jpg");
+
 }
 
 .header {
     /*overflow: hidden; */
-    padding: 2%;
+    padding: 0;
+    position: relative;
+    top: 20px;
 }
 
 button {
@@ -96,14 +99,14 @@ button::-moz-focus-inner {
     text-decoration: none;
     border-radius: 3px;
     border: 0;
-    margin: 0;
+    margin: 5%;
 }
 .button-primary {
-    background: slategrey;
+    background: slateblue;
     color: #fff;
 }
 
 .button-primary.hover {
-    background: lightslategrey;
+    background: slategrey;
     color: #fff;
 }
